@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program za obavljanje osnovnih aritmetičkih operacija</title>
+</head>
+
+<body>
+    <script>
+
+        var x = prompt("Unesite prvi broj:");
+        var znak = prompt("Unesite znak operacije: \n sabiranje + \n oduzimanje - \n množenje * \n dijeljenje / ");
+
+        var y = prompt("Unesite drugi broj:");
+        var z;
+
+        if (znak == "+") {
+            z = parseInt(x) + parseInt(y);
+        } else if (znak == "-") {
+          z =  parseInt(x) - parseInt(y);
+        } else if (znak == "*") {
+            z =  parseInt(x) * parseInt(y);
+        } else if (znak == "/") {
+        
+            if (y != 0) {
+                z =  parseInt(x) / parseInt(y);
+            }
+            else {
+                z = "Dijeljenje sa nulom nije dozvoljeno";
+            }
+        }
+        else {
+            z = "Unijeli ste ne definisan znak";
+
+        }
+
+        alert("Rezultat: " + z);
+
+
+    </script>
+</body>
+
+</html>
